@@ -2,7 +2,7 @@
     require_once "include/header.php"; 
 ?>
 
-<form method="get"  action="success.php">
+<form method="post"  action="success.php">
     <label for="firstname">First Name</label><br>
     <input type="text" name="firstname" placeholder="First Name" required><br>
     <label for="lastname">Last Name</label><br>
