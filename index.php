@@ -1,5 +1,6 @@
 <?php
-    require_once "include/header.php"; 
+    require_once "include/header.php";
+    require_once "database/conn.php"; 
 ?>
 
 <form method="post"  action="success.php">
