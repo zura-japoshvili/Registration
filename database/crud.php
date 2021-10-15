@@ -24,5 +24,20 @@
             }
 
         }
+
+        public function getAttendees(){
+            $sql = "SELECT * FROM `attendee`";
+            $result = $this->db->query($sql);
+            return $result;
+        }
+
+        public function getAttendeeDetails($id){
+            $sql = "SELECT * FROM attendee WHERE attendee_id = :id";
+            $stmt = $this->db->prepare($sql);
+            $stmt->bindparam(":id", $id);
+            $stmt->execute();
+            $result = $stmt->fetch();
+            return $result;
+        }
     }
 ?>
