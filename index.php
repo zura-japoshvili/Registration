@@ -1,6 +1,6 @@
 <?php
     require_once "include/header.php";
-    require_once "database/conn.php"; 
+    require_once "database/conn.php";
 ?>
 
 <form method="post"  action="success.php">
@@ -12,7 +12,7 @@
     <input type="text" name="email" placeholder="Email" required><br>
     <label for="password">Password</label><br>
     <input type="password" name="password" placeholder="Password" required><br>
-    <input type="submit" placeholder="submit"> 
+    <input type="submit" name="submit" placeholder="submit"> 
 </form>
 
 <?php
